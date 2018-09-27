@@ -1,0 +1,14 @@
+
+<nb-card>
+    <nb-card-header>
+      Mi Carrito - Productos
+    </nb-card-header>
+  
+    <nb-card-body>
+      <ng2-smart-table [settings]="settings" [source]="source">
+      </ng2-smart-table>
+    </nb-card-body>
+</nb-card>
+<div>
+  <button class="btn btn-block btn-hero-success" (click)="buyAll()" *ngIf="source.length > 0">Comprar Todo</button>
+</div>
